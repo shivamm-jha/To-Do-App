@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lora&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #111;
+    
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+
+}
+/* --------css for heading---------- */
+.headline
+{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 50;
+    text-align: center;
+    margin: 1rem 0 3rem;
+    font-family: 'Hind' , sans-serif;
+}
+.title{
+    color:lime;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+/* --------css for main content form---------- */
+
+.main{
+    margin-top: 4rem;
+}
+.main{
+    min-height: calc(100vh - 2rem);
+}
+.sub-main{
+    min-height: calc(100vh - 10rem);
+} 
+ .footer{
+    margin-top: 50vh;
+}
+h2{
+    text-align: center;
+    margin-top: 4rem;
+    font-weight: 500;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    margin: auto;
+    width:30vw;
+}
+.input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input-text{
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: none;
+    height: 50px;
+    border-radius: 25px;
+    width: 350px;
+    transition: 0.5s;
+    font-size: 1.1rem;
+}
+/* --------button to add todos------- */
+.plus-btn{
+    outline: none;
+    border: none;
+    height: 50px;
+    border-radius: 25px;
+    width: 50px;
+    background-color: lime;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    margin: 0.25s;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.plus-btn:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+/* ------------parent(main) container where all our todos will get added----------- */
+.container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 2rem;
+    width: 100%;
+}
+/* ------------child container under main container where our todos are stored-------- */
+
+
+.todo-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 26vw;
+    margin-bottom: .2rem;
+    padding: 0.1rem;
+
+}
+/* -------our todos(list items)--------- */
+.todo-item{
+    background:none;
+    outline: none;
+    border: none;
+    color:#fff;
+    font-size: 1.4rem;
+    list-style: none;    
+}
+/* -------container which contain both our todo(list item) and buttons(edit & remove)------- */
+.todo-list-container{
+    border-bottom: 4px solid #fff;
+    border-radius: none;
+    outline: none;
+}
+
+.todo-list-container .todo-list .button-divv i{
+    pointer-events: none;
+}
+/* it will create the effect while deleting the item */
+.fall{
+    opacity: 0 !important;
+    transform: translateY(30px);
+    transition: .5s;
+}
+/*  */
+.dlt_all{
+    opacity: 0 !important;
+    transform: translateY(30px);
+    transition: .5s;
+}
+/*this will add line through effect whenever a item is clicked upon(i.e it gets complete) */
+
+.todo-list li.completed{
+    color: #b6b6b6;
+    text-decoration: line-through;
+}
+.input-material.completed{
+    color: #b6b6b6;
+    text-decoration: line-through;
+}
+/* ----------------edit button------------- */
+.edit-btn{
+    color:lime;
+    background: none;
+    outline: none;
+    border:none;
+    margin-right: .5rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;   
+} 
+.edit-btn:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+/* remove all transition  */
+.dlt-everything{
+    opacity: 0 !important;
+    transform: translateY(30px);
+    transition: .5s;
+}
+/* ----------------delete buton------------- */
+.dlt-btn{
+    color:rgb(231, 32, 32);
+    background: none;
+    outline: none;
+    border:none;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+.dlt-btn:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+
+
+.submit-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+/* ------------remove all button----------- */
+.button{
+    background-color: lime;
+    padding: .5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(19, 18, 18);
+    border-radius: 5px;
+    font-family: 'Hind' , sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.button:hover{
+   
+    cursor: pointer;
+    opacity: 0.7;
+}
+.button-divv{
+    display: flex;
+}
+/* -------------footer content , social media icon & links------------ */
+.footer{
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+.social-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 10vw;
+    
+}
+.social-links a{
+    color: white;
+    padding: .3rem;
+    font-size: 1.5vw;
+}
+
+footer{
+    margin-top: auto;
+}
+ .footer{
+    margin-top: 20vh;
+} 
+
+
+
+/* ------responsive webdesign-------- */
+
+ @media (max-width:800px){
+    .footer p{
+        font-size: 2.1rem;
+    }
+    .social-links a{
+        font-size: 2rem;
+    }
+    .todo-list{
+        width:calc(90vw - 20px);
+    }
+    .todo-item li{
+        width: 50vw;
+    }
+    .form{
+        width: 95vw;
+    }
+    .input-text{
+        width:100%;
+    }
+    .plus-btn{
+        width: 9vw;
+        font-size: 6vw;
+    }
+    .input{
+        width: 70vw;
+    }
+
+    
+}
+
+@media (max-width:539px)
+{
+    .input{
+        width: 85vw;
+    }
+    .plus-btn{
+        width: 17vw;
+        font-size: 8vw;
+    }
+}

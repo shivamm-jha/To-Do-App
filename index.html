@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <title>To-Do App</title>
+  </head>
+  <body>
+    <div class="headline">
+      <h1><span class="title">Todo</span>List</h1>
+    </div>
+    <div class="main">
+      <div class="sub-main">
+        <!-- ------input form-------- -->
+
+        <form action="" class="form" autocomplete="off">
+          <div class="input">
+            <input
+              type="text"
+              id="input-text"
+              class="input-text"
+              placeholder="What do you want to do..."
+            />
+            <button id="plus-btn" class="plus-btn" onclick="addItem()">
+              <i class="fas fa-plus"></i>
+            </button>
+          </div>
+        </form>
+
+        <!-- ------container which will contain our todos----------- -->
+
+        <div class="container" id="container"></div>
+
+        <div class="submit-btn">
+          <button id="button" class="button">
+            Remove all
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------footer------------ -->
+    <footer>
+      <div class="footer">
+        <p>Connect with me on</p>
+      </div>
+
+      <!-- ----------social media links---------- -->
+
+      <div class="social-links">
+        <span class="linkedin"
+          ><a href="https://www.linkedin.com/in/shivammjha/"
+            ><i class="fab fa-linkedin"></i></a
+        ></span>
+        <span class="instagram"
+          ><a href="https://www.instagram.com/shivam.jha_"
+            ><i class="fab fa-instagram"></i></a
+        ></span>
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
